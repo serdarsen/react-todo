@@ -28,6 +28,7 @@
     "webpack-dev-server": "^4.9.2"
   },
   "engines": {
-    "node": "18.x"
+    "node": "18.x",
+    "npm": "8.x",
   }
 }
