@@ -3,11 +3,11 @@ import MainPage from "./component/MainPage";
 import "./app.scss";
 
 function App() {
-    return (
-      <div>
-        <MainPage />
-      </div>
-    );
-  }
-  
+  return (
+    <div>
+      <MainPage />
+    </div>
+  );
+}
+
 export default App;

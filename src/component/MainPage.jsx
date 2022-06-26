@@ -1,8 +1,9 @@
 import React from "react";
-import Header from "./header/Header";
+import MainCard from "./MainCard";
+import "./mainPage.scss";
 
-const MainPage = () => {
-    return <Header/>;
+function MainPage() {
+  return <MainCard />;
 }
 
 export default MainPage;
