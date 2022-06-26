@@ -1,0 +1,20 @@
+@import "../style/font.scss";
+
+.app__jobform {
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.app__jobform-content {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 0.5rem 0.5rem;
+}
+
+.app__jobform-message {
+    flex: 1;
+}
+
+.app__jobform-message-input {
+    font-family: $defaultFontFamily;
+}

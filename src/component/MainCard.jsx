@@ -4,12 +4,12 @@ import Header from "./Header";
 import List from "./List";
 import "./mainCard.scss";
 
-function MainCard({ items }) {
+function MainCard({ items, onClickNew, deleteItem }) {
   return (
     <div className="app__maincard">
       <Card>
-        <Header />
-        <List items={items} />
+        <Header onClickNew={onClickNew} />
+        <List items={items} deleteItem={deleteItem} />
       </Card>
     </div>
   );

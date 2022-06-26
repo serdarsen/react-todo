@@ -3,7 +3,7 @@ import "./item.scss";
 
 function Item({ item }) {
   return (
-    <li className={`${item.completed ? "app__item app__item-completed" : "app__item"}`}>
+    <li className={`${item.completed ? "app__item app__text-strikethrough" : "app__item"}`}>
       {item.message}
     </li>
 

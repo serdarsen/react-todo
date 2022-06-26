@@ -3,7 +3,7 @@ import "./header.scss";
 import "../style/button.scss";
 import { FaPlus } from "react-icons/fa";
 
-function Header() {
+function Header({ onClickNew }) {
   return (
     <header className="app__header">
       <div className="app__header-heading">
@@ -13,7 +13,7 @@ function Header() {
         <FaPlus
           className="app__button-black"
           size={32}
-          onClick={() => {}}
+          onClick={onClickNew}
           title="Add"
         />
       </div>
