@@ -1,0 +1,12 @@
+@import "../style/font.scss";
+
+.app__header {
+    font-size: 2rem;
+    font-family: $defaultFontFamily;
+    padding: 1rem 1rem 0rem 1rem;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}

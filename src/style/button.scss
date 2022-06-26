@@ -1,0 +1,39 @@
+.app__button-disabled {
+    color: #808080;
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.app__button-disabled:hover {
+    color: #808080;
+}
+
+.app__button-disabled:active {
+    color: #808080;
+}
+
+.app__button-red {
+    color: #656565;
+    cursor: pointer;
+}
+
+.app__button-red:hover {
+    color: #cc6565;
+}
+
+.app__button-red:active {
+    color: #656565;
+}
+
+.app__button-black {
+    color: #656565;
+    cursor: pointer;
+}
+
+.app__button-black:hover {
+    color: #000;
+}
+
+.app__button-black:active {
+    color: #656565;
+}

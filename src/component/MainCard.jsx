@@ -1,12 +1,15 @@
 import React from "react";
 import Card from "./Card";
+import Header from "./Header";
+import List from "./List";
 import "./mainCard.scss";
 
-function MainCard() {
+function MainCard({ items }) {
   return (
     <div className="app__maincard">
       <Card>
-        Main Card Test
+        <Header />
+        <List items={items} />
       </Card>
     </div>
   );
