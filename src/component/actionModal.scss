@@ -1,11 +1,12 @@
 .app__actionModal-content {
-  font-weight: 600;
-  padding: 0.3rem 0.3rem;
+    padding: 0.3rem 0.3rem;
 }
 
 .app__actionModal-content span {
-  display: block;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+    font-size: 1.2rem;
+    font-family: inherit;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }

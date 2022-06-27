@@ -27,7 +27,7 @@ const Form = ({ onCancel, onSubmit }) => {
         maxLength={255}
         title={message}
       />
-      <Footer onCancel={onCancel} cancelLabel="Cancel" submitLabel="Save" />
+      <Footer onCancel={onCancel} cancelLabel="Cancel" submitLabel="Add" />
     </form>
   );
 };

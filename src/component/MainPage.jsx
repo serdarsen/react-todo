@@ -10,7 +10,6 @@ const MainPage = () => {
   const [isOpenDeleteModal, setIsOpenDeleteModal] = useState();
 
   const [items, setItems] = useState([]);
-  const [currentItem, setCurrentItem] = useState();
 
   const onCancelCreateModal = () => {
     setIsOpenCreateModal(false);
@@ -28,15 +27,31 @@ const MainPage = () => {
     setIsOpenCreateModal(false);
   };
 
+  const deleteAllCompleted = () => {
+    const updatedItems = items.filter((item) => !item.completed);
+    ItemService.saveItems(updatedItems);
+    setItems(updatedItems);
+  };
+
+  const toggleCompleted = (itemId) => {
+    const updatedItems = items.map((item) => {
+      if (itemId === item.id) {
+        item.completed = !item.completed;
+      }
+
+      return item;
+    });
+
+    ItemService.saveItems(updatedItems);
+    setItems(updatedItems);
+  };
+
   const onCancelDeleteModal = () => {
     setIsOpenDeleteModal(false);
   };
 
   const onSubmitDeleteModal = () => {
-    const filteredItems = items.filter((item) => currentItem.id !== item.id);
-    ItemService.saveItems(filteredItems);
-
-    setItems(filteredItems);
+    deleteAllCompleted();
     setIsOpenDeleteModal(false);
   };
 
@@ -44,8 +59,11 @@ const MainPage = () => {
     setIsOpenCreateModal(true);
   };
 
-  const deleteItem = (item) => {
-    setCurrentItem(item);
+  const onClickTodoItem = (itemId) => {
+    toggleCompleted(itemId);
+  };
+
+  const onClickDeleteAllCompleted = () => {
     setIsOpenDeleteModal(true);
   };
 
@@ -65,19 +83,13 @@ const MainPage = () => {
         isOpen={isOpenDeleteModal}
         onCancel={onCancelDeleteModal}
         onSubmit={onSubmitDeleteModal}
-        text={(
-          <span>
-            Delete
-            {currentItem?.name}
-            {" "}
-            ?
-          </span>
-)}
+        text="Delete all completed?"
       />
       <MainCard
         items={items}
         onClickNew={onClickNew}
-        deleteItem={deleteItem}
+        onClickTodoItem={onClickTodoItem}
+        onClickDeleteAllCompleted={onClickDeleteAllCompleted}
       />
     </div>
   );

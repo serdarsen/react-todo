@@ -1,14 +1,18 @@
 import React from "react";
 import Card from "./Card";
+import DeleteButton from "./DeleteButton";
 import Header from "./Header";
 import List from "./List";
 import "./mainCard.scss";
 
-const MainCard = ({ items, onClickNew, deleteItem }) => (
+const MainCard = ({
+  items, onClickNew, onClickTodoItem, onClickDeleteAllCompleted,
+}) => (
   <div className="app__maincard">
     <Card>
       <Header onClickNew={onClickNew} />
-      <List items={items} deleteItem={deleteItem} />
+      <List items={items} onClickRow={onClickTodoItem} />
+      <DeleteButton onClick={onClickDeleteAllCompleted} />
     </Card>
   </div>
 );

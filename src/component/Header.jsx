@@ -1,6 +1,5 @@
 import React from "react";
 import "./header.scss";
-import "../style/button.scss";
 import { FaPlus } from "react-icons/fa";
 
 const Header = ({ onClickNew }) => (
