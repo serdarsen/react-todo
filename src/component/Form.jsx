@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Footer from "./Footer";
 import "./form.scss";
 
-function Form({ onCancel, onSubmit }) {
+const Form = ({ onCancel, onSubmit }) => {
   const [message, setMessage] = useState("");
 
   const resetForm = () => {
@@ -34,6 +34,6 @@ function Form({ onCancel, onSubmit }) {
       <Footer onCancel={onCancel} cancelLabel="Cancel" submitLabel="Save" />
     </form>
   );
-}
+};
 
 export default Form;

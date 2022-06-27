@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "./modal.scss";
 
-function Modal({ isOpen = null, onRequestClose, children }) {
+const Modal = ({ isOpen = null, onRequestClose, children }) => {
   const appModalRef = useRef();
 
   const createModalClassName = () => {
@@ -56,6 +56,6 @@ function Modal({ isOpen = null, onRequestClose, children }) {
       </div>
     </div>
   );
-}
+};
 
 export default Modal;

@@ -5,7 +5,7 @@ import ItemService from "../service/ItemService";
 import CreateModal from "./CreateModal";
 import DeleteModal from "./DeleteModal";
 
-function MainPage() {
+const MainPage = () => {
   const [isOpenCreateModal, setIsOpenCreateModal] = useState();
   const [isOpenDeleteModal, setIsOpenDeleteModal] = useState();
 
@@ -81,6 +81,6 @@ function MainPage() {
       />
     </div>
   );
-}
+};
 
 export default MainPage;
