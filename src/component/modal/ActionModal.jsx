@@ -1,6 +1,6 @@
 import React from "react";
 import "./actionModal.scss";
-import Footer from "./Footer";
+import PromptButtonGroup from "./PromptButton";
 import Modal from "./Modal";
 
 const ActionModal = ({
@@ -10,7 +10,7 @@ const ActionModal = ({
     <div className="app__actionModal-content">
       <span>{text}</span>
     </div>
-    <Footer
+    <PromptButtonGroup
       onCancel={onCancel}
       onSubmit={onSubmit}
       cancelLabel="No"

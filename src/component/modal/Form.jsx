@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Footer from "./Footer";
+import PromptButtonGroup from "./PromptButton";
 import "./form.scss";
 
 const Form = ({ onCancel, onSubmit }) => {
@@ -27,7 +27,7 @@ const Form = ({ onCancel, onSubmit }) => {
         maxLength={255}
         title={message}
       />
-      <Footer onCancel={onCancel} cancelLabel="Cancel" submitLabel="Add" />
+      <PromptButtonGroup onCancel={onCancel} cancelLabel="Cancel" submitLabel="Add" />
     </form>
   );
 };

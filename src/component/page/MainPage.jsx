@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import MainCard from "./MainCard";
+import MainCard from "../card/MainCard";
 import "./mainPage.scss";
-import ItemService from "../service/ItemService";
-import CreateModal from "./CreateModal";
-import DeleteModal from "./DeleteModal";
+import ItemService from "../../service/ItemService";
+import CreateModal from "../modal/CreateModal";
+import DeleteModal from "../modal/DeleteModal";
 
 const MainPage = () => {
   const [isOpenCreateModal, setIsOpenCreateModal] = useState();

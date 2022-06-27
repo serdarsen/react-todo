@@ -1,13 +1,13 @@
 import React from "react";
-import "./footer.scss";
+import "./promptButton.scss";
 
-const Footer = ({
+const PromptButton = ({
   onCancel = () => {},
   onSubmit = () => {},
   cancelLabel = "Cancel",
   submitLabel = "Save",
 }) => (
-  <div className="app__footer">
+  <div className="app__promptbutton">
     <button
       type="button"
       className="app__form-button"
@@ -18,7 +18,7 @@ const Footer = ({
     </button>
     <button
       type="submit"
-      className="app__footer-submit app__form-button"
+      className="app__promptbutton-submit app__form-button"
       onClick={onSubmit}
       title={submitLabel}
     >
@@ -27,4 +27,4 @@ const Footer = ({
   </div>
 );
 
-export default Footer;
+export default PromptButton;

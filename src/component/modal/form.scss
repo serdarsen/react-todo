@@ -6,7 +6,7 @@
     display: block;
     width: 100%;
     padding: 0.375rem 0.75rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: inherit;
     font-weight: 400;
     line-height: 1.5;
@@ -52,12 +52,4 @@
 
 .app__form-message {
     margin: 0rem 0rem 1rem 0rem;
-}
-
-input:focus {
-    border-color: red;
-}
-
-input:active {
-    border-color: green;
 }
