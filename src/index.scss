@@ -2,3 +2,7 @@
 @import "./style/button.scss";
 @import "./style/font.scss";
 @import "./style/text.scss";
+
+body {
+    font-family: $defaultFontFamily;
+}

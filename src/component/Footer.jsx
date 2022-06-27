@@ -10,7 +10,7 @@ const Footer = ({
   <div className="app__footer">
     <button
       type="button"
-      className=""
+      className="app__form-button"
       onClick={onCancel}
       title={cancelLabel}
     >
@@ -18,7 +18,7 @@ const Footer = ({
     </button>
     <button
       type="submit"
-      className="app__footer-resolve"
+      className="app__footer-submit app__form-button"
       onClick={onSubmit}
       title={submitLabel}
     >

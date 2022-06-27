@@ -17,20 +17,16 @@ const Form = ({ onCancel, onSubmit }) => {
 
   return (
     <form className="app__form" onSubmit={onSubmitForm}>
-      <div className="app__form-content">
-        <div className="app__form-message">
-          <input
-            type="text"
-            className=""
-            placeholder="Message"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            required
-            maxLength={255}
-            title={message}
-          />
-        </div>
-      </div>
+      <input
+        type="text"
+        className="app__form-message app__form-element"
+        placeholder="Message"
+        value={message}
+        onChange={(e) => setMessage(e.target.value)}
+        required
+        maxLength={255}
+        title={message}
+      />
       <Footer onCancel={onCancel} cancelLabel="Cancel" submitLabel="Save" />
     </form>
   );
