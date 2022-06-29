@@ -1,4 +1,3 @@
-import React from "react";
 import ActionModal from "./ActionModal";
 
 const DeleteModal = ({

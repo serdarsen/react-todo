@@ -1,4 +1,3 @@
-import React from "react";
 import "./actionModal.scss";
 import PromptButtonGroup from "./PromptButton";
 import Modal from "./Modal";

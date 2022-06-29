@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import "./modal.scss";
 
 const Modal = ({ isOpen = null, onRequestClose, children }) => {

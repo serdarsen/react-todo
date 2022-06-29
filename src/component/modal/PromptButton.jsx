@@ -1,4 +1,3 @@
-import React from "react";
 import "./promptButton.scss";
 
 const PromptButton = ({
