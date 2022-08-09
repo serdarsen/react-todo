@@ -9,7 +9,7 @@ const config = {
   mode: "development",
   entry: path.join(__dirname, "src", "index.jsx"),
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "build"),
     filename: "main.[fullhash].js",
   },
   devServer: {
